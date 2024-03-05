@@ -1,14 +1,15 @@
-import express from "express";
-import cors from "cors";
-import fetch from "cross-fetch";
-import { newsData } from "./env.js";
+const express = require('express');
+const cors = require('cors');
+const fetch = require('cross-fetch');
 
 const app = express();
-
-app.use(express.json());
+const port = process.env.PORT || 3000;
 app.use(cors());
 
-const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
+});
+
 
 app.get('/newsData', (req, res) => {
     const url = `https://newsapi.org/v2/everything?q=keyword&apiKey=${newsData}`;
@@ -36,4 +37,3 @@ app.get('/newsData', (req, res) => {
   });
 
 
-app.listen(port, ()  => console.log(`Server started on port ${port}`));
