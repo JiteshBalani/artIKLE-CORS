@@ -6,6 +6,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(cors());
 
+const newsData = '7409a41708f44b0babf13a6aff79dc94';
+
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
