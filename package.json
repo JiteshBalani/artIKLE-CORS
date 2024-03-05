@@ -1,0 +1,25 @@
+{
+  "name": "artikle-cors",
+  "version": "1.0.0",
+  "description": "\"backend to fetch newsAPI\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiteshBalani/artIKLE-CORS.git"
+  },
+  "author": "Jitesh Balani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JiteshBalani/artIKLE-CORS/issues"
+  },
+  "homepage": "https://github.com/JiteshBalani/artIKLE-CORS#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-fetch": "^4.0.0",
+    "express": "^4.18.3"
+  }
+}
