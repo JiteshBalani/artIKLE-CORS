@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "\"backend to fetch newsAPI\"",
   "main": "index.js",
+  "type" : "module",
   
   "scripts": {
     "test": "npm test",
     "start": "node index.js",
-    "type" : "module"
   },
   "repository": {
     "type": "git",
